@@ -13,9 +13,11 @@ socket.on("chat:messages", (data) => {
 });
 
 sendBtn.addEventListener("click", () => {
-  const data = {
-    email: emailTxt.value,
-    message: messageTxt.value,
-  };
-  socket.emit("chat:new-message", data);
+  if (emailTxt.value !== "" && messageTxt !== "") {
+    const data = {
+      email: emailTxt.value,
+      message: messageTxt.value,
+    };
+    socket.emit("chat:new-message", data);
+  }
 });

@@ -5,29 +5,6 @@ const router = express.Router();
 const PORT = 8080;
 const app = express();
 
-const mensajes = [
-  {
-    email: "marcelo@hotmail.com",
-    date: "[test]",
-    message: "hola!",
-  },
-  {
-    email: "carola@hotmail.com",
-    date: "[test]",
-    message: "chau!!",
-  },
-  {
-    email: "juan@gmail.com",
-    date: "[test]",
-    message: "hola, yo soy otro user",
-  },
-  {
-    email: "pedro@gmail.com",
-    date: "[test]",
-    message: "yo lo mismo, aguante todo",
-  },
-];
-
 app.set("views", "./views");
 app.set("view engine", "ejs");
 
