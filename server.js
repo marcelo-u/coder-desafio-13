@@ -120,5 +120,5 @@ io.on("connection", async (socket) => {
 });
 
 const fs = require("fs");
-const archivo = require("./modulos/Archivo");
+const archivo = require("./modulos/archivo.js");
 const arch = new archivo("./resources/messages.json");

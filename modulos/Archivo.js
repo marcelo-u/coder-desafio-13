@@ -37,4 +37,4 @@ class Archivo {
     }
   }
 }
-module.exports = Archivo;
+module.exports = archivo;
